@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*  ===================header start======================== */
+#header {
+	width: 100%;
+	height: 67px;
+	position: fixed;
+	top: 0px;
+}
+
+#header_wrap {
+	width: 48%;
+	height: 67px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#header_logo {
+	padding: 13px 0px;
+	/*margin-top: 13px; */
+	float: left;
+}
+/*  ===================header End======================== */
+
+/* ===================contents Start================== */
+#contents {
+	width: 50%;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 137px;
+}
+
+#info_etc {
+	float: left;
+	width: 540px;
+	height: 394px;
+	margin-right: 40px;
+	text-align: left;
+}
+
+#cont_login {
+	position: relative;
+	float: left;
+	width: 304px;
+	min-height: 299px;
+	margin-top: 10px;
+	padding: 21px 19px 74px;
+	border: 1px solid #ddd;
+	margin-top: 10px;
+}
+
+#btn_login {
+	display: block;
+	width: 302px;
+	height: 46px;
+	margin-top: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	font-size: 16px;
+	color: #222;
+	background: #f9df33;
+	font-weight: bold;
+}
+
+#info_user {
+	position: absolute;
+	left: 25px;
+	right: 25px;
+	bottom: 18px;
+	padding-top: 7px;
+	margin-right: 2px;
+	border-top: 1px solid #e0e0e0;
+	letter-spacing: -1px;
+}
+
+#info_user a {
+	color: #333;
+	text-decoration: none;
+}
+
+#join_user {
+	float: left;
+}
+
+#list_user {
+	float: right;
+}
+
+#list_user li {
+	float: left;
+	list-style: none;
+}
+
+#list_user li>a {
+	color: #333;
+	text-decoration: none;
+}
+
+
+/* ====================contents End=================== */
+/*  ===================footer start======================== */
+#footer {
+	width: 100%;
+	height: 132px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+#footer_wrap {
+	width: 48%;
+	height: 132px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+/*  ===================footer End======================== */
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="header_wrap"><h1>Member login</h1>
+		</div><hr>
+	</div>
+	<div id="contents">
+		<div id="info_etc">
+			<img alt="" src="/web_ex3/images/etc.png">
+		</div>
+		<div id="cont_login">
+			<h1>Login</h1>
+			<input type="text" placeholder="이메일 또는 전화번호"> <input
+				type="text" placeholder="비밀번호"><br> <input
+				type="checkbox">로그인 상태 유지
+			<button type="submit" id="btn_login">로그인</button>
+
+			<div id="info_user">
+				<div id="join_user">
+					<a href="/web_ex3/member/memberjoin.html" id="signup">회원가입</a>
+				</div>
+				<ul id="list_user">
+					<li><a href="#">계정찾기</a></li>
+					<li>&nbsp;|&nbsp;</li>
+					<li><a href="#">비밀번호 재설정</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 로그인 DIV -->
+	</div>
+	<hr>
+	<div id="footer">
+		<div id="footer_wrap"></div>
+
+	</div>
+</body>
+</html>
